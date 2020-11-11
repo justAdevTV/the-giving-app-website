@@ -1,0 +1,45 @@
+// COLOR VARIABLES
+$color-primary-light: #f6fbff;
+$color-primary: #ff52c1;
+$color-primary-dark: #9952ff;
+
+$color-black: #00252e;
+
+$color-grey: #808e9a;
+
+$color-white: #ffffff;
+
+$gray-shadow-light: 0px 6px 13px 0px rgba(0, 37, 46, 0.08);
+$gray-shadow-regular: 0px 6px 13px 0px rgba(0, 37, 46, 0.22);
+$gray-shadow-dark: 0px 6px 13px 0px rgba(0, 37, 46, 0.44);
+$pink-shadow-regular: 0px 0px 9px 0px rgba(255, 82, 193, 0.22);
+$pink-shadow-dark: 0px 0px 9px 0px rgba(255, 82, 193, 0.44);
+
+// FONT VARIABLES
+$font-primary: "Khula", sans-serif;
+$font-display: "Poppins", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  font-family: "Khula", sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.6;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: $color-white;
+}

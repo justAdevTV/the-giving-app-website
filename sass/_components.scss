@@ -1,0 +1,128 @@
+// =========== BUTTON ============
+.btn {
+  color: $color-white;
+  border-radius: 4rem;
+  background-color: $color-primary;
+  box-shadow: $gray-shadow-regular;
+  border: none;
+  padding: 2.5rem 10rem;
+  font-family: $font-primary;
+  font-size: 2em;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $gray-shadow-dark;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: $gray-shadow-dark;
+  }
+
+  &--small {
+    padding: 0.9rem 3rem;
+    font-size: 1.6em;
+    font-weight: 400;
+  }
+
+  &--rectangle {
+    padding: 1.2rem 4.1rem;
+    border-radius: 0.5rem;
+    font-size: 1.6em;
+    box-shadow: none;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: none;
+    }
+
+    &:active {
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+  }
+
+  &--transparent {
+    position: relative;
+    box-shadow: inset $gray-shadow-light;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    background-color: transparent;
+
+    // Outside the button
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4rem;
+      background-color: transparent;
+      box-shadow: $gray-shadow-regular;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: $gray-shadow-dark;
+      }
+
+      &:active {
+        transform: translateY(1px);
+        box-shadow: $gray-shadow-dark;
+      }
+    }
+
+    // Inside the button
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: inset $gray-shadow-light;
+    }
+
+    &:active {
+      transform: translateY(1px);
+      box-shadow: inset $gray-shadow-light;
+    }
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 1.2em;
+    padding: 1.1rem 4rem;
+
+    &--small {
+      font-size: 0.94em;
+      padding: 0.5rem 1.8rem;
+    }
+  }
+}
+
+// ============ LOGO ==============
+.logo {
+  &__link {
+    display: block;
+    height: 3.8em;
+
+    & img {
+      max-height: 100%;
+    }
+    @media (max-width: $width-mobile) {
+      height: 1.6em;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+}
+
+// ============ LOGO ==============
+.input {
+  width: 100%;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  font-size: 1.6em;
+  font-family: $font-primary;
+  outline: none;
+  border: none;
+}
