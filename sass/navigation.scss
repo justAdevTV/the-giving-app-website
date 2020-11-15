@@ -25,6 +25,7 @@
     margin-right: 5rem;
 
     & > a {
+      text-decoration: none;
       user-select: none;
       color: $color-ghost-white;
       text-transform: uppercase;
