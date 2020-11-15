@@ -1,6 +1,7 @@
 .nav {
   position: absolute;
   top: 0;
+  left: 0;
   padding: 4.5rem 9rem;
   padding-bottom: 1rem;
   width: -webkit-fill-available;
@@ -22,26 +23,32 @@
   &__link {
     display: inline-block;
     margin-right: 5rem;
-    cursor: pointer;
-    // TODO: Change to nicer animation later
-    transition: all 0.2s ease-in-out;
 
-    &:hover {
-      color: $color-gray-light-2;
-      transform: translateY(-2px);
-    }
-    &:active {
-      transform: translateY(1px);
+    & > a {
+      user-select: none;
+      color: $color-ghost-white;
+      text-transform: uppercase;
+      cursor: pointer;
+      // TODO: Change to nicer animation later
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $color-gray-light-2;
+        transform: translateY(-2px);
+      }
+      &:active {
+        transform: translateY(1px);
+      }
     }
   }
 
   &__links {
-    text-transform: uppercase;
-    user-select: none;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     font-size: 2.4rem;
+    list-style: none;
+    color: $color-ghost-white;
   }
 
   & > button {
