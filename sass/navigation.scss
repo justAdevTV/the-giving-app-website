@@ -1,0 +1,52 @@
+.nav {
+  position: absolute;
+  top: 0;
+  padding: 4.5rem 9rem;
+  padding-bottom: 1rem;
+  width: -webkit-fill-available;
+  z-index: 999;
+  display: flex;
+  color: $color-ghost-white;
+
+  &__logo {
+    width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-right: 5rem;
+    cursor: pointer;
+    // TODO: Change to nicer animation later
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $color-gray-light-2;
+      transform: translateY(-2px);
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+
+  &__links {
+    text-transform: uppercase;
+    user-select: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    font-size: 2.4rem;
+  }
+
+  & > button {
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
