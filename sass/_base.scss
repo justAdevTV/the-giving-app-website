@@ -12,7 +12,8 @@ $color-gray: #808e9a;
 $color-gray-light-1: "#FDFDFD";
 $color-gray-light-2: "#9A9CA1";
 
-$color-overlay: #07070773;
+// TODO: Tell Ramon I changed this
+$color-overlay: #070707ad;
 
 $color-white: #ffffff;
 
@@ -32,6 +33,7 @@ $font-display: "Poppins", sans-serif;
 *::after {
   box-sizing: inherit;
 }
+
 html {
   font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
 }

@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 100vh;
-  background-image: url("/images/home_banner.jpg");
+  background-image: url("/public/images/home_banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;
@@ -19,6 +19,44 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     z-index: 2;
+
+    & > a {
+      margin: auto;
+      margin-bottom: 7.5rem;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 40rem;
+    color: $color-ghost-white;
+
+    &--main {
+      display: block;
+      font-size: 3.6rem;
+      font-weight: 400;
+    }
+
+    &--sub {
+      display: block;
+      font-family: "Poppins", sans-serif;
+      font-size: 7.2rem;
+      font-weight: 800;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    & > button {
+      margin: 0 2.9rem;
+    }
   }
 }

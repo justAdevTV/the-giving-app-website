@@ -41,6 +41,7 @@ body {
 
 .btn {
   padding: 2rem 3rem;
+  user-select: none;
   font-size: 2.4rem;
   border-radius: 1.5rem;
   color: #ffffff;
@@ -64,6 +65,24 @@ body {
     background-color: #ffffff; }
     .btn--inverted:hover {
       background-color: "#FDFDFD"; }
+
+.indicator {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 700;
+  width: 6rem;
+  height: 6rem;
+  color: #514a9d;
+  background-color: #fbf9ff;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px #00000029;
+  transition: transform 0.15s ease-in;
+  user-select: none; }
+  .indicator:hover {
+    transform: translateY(-2px); }
+  .indicator:active {
+    transform: translateY(1px); }
 
 .nav {
   position: absolute;
@@ -113,7 +132,7 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: url("/images/home_banner.jpg");
+  background-image: url("/public/images/home_banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;
@@ -123,9 +142,35 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #07070773; }
+    background-color: #070707ad; }
   .header__content {
     position: absolute;
     height: 100%;
     width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     z-index: 2; }
+    .header__content > a {
+      margin: auto;
+      margin-bottom: 7.5rem; }
+  .header__text {
+    text-align: center;
+    margin-top: 40rem;
+    color: #fbf9ff; }
+    .header__text--main {
+      display: block;
+      font-size: 3.6rem;
+      font-weight: 400; }
+    .header__text--sub {
+      display: block;
+      font-family: "Poppins", sans-serif;
+      font-size: 7.2rem;
+      font-weight: 800; }
+  .header__buttons {
+    display: flex;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto; }
+    .header__buttons > button {
+      margin: 0 2.9rem; }
