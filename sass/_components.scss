@@ -87,42 +87,4 @@
       box-shadow: inset $gray-shadow-light;
     }
   }
-
-  @media (max-width: $width-mobile) {
-    font-size: 1.2em;
-    padding: 1.1rem 4rem;
-
-    &--small {
-      font-size: 0.94em;
-      padding: 0.5rem 1.8rem;
-    }
-  }
-}
-
-// ============ LOGO ==============
-.logo {
-  &__link {
-    display: block;
-    height: 3.8em;
-
-    & img {
-      max-height: 100%;
-    }
-    @media (max-width: $width-mobile) {
-      height: 1.6em;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-  }
-}
-
-// ============ LOGO ==============
-.input {
-  width: 100%;
-  border-radius: 0.6rem;
-  padding: 1rem;
-  font-size: 1.6em;
-  font-family: $font-primary;
-  outline: none;
-  border: none;
 }

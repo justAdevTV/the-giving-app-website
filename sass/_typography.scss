@@ -7,26 +7,19 @@
   @extend %heading;
   font-weight: 700;
   font-family: $font-display;
-  font-size: 4.78em;
-
-  @media (max-width: $width-mobile) {
-    font-size: 2.4em;
-  }
+  font-size: 4.78rem;
 }
 
 .heading-2 {
   @extend %heading;
   font-family: $font-primary;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .heading-3 {
   @extend %heading;
   font-family: $font-display;
   font-weight: 700;
-  font-size: 4em;
-  @media (max-width: $width-mobile) {
-    font-size: 2.4em;
-  }
+  font-size: 4rem;
 }
