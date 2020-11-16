@@ -136,3 +136,22 @@
     }
   }
 }
+
+.contact-us {
+  padding: 15rem;
+  padding-top: 5rem;
+
+  &__content {
+    display: grid;
+    margin-top: 15rem;
+
+    &__info {
+      &__email {
+        margin-top: 5.5rem;
+      }
+    }
+    &__form {
+      display: block;
+    }
+  }
+}

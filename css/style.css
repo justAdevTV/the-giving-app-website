@@ -251,3 +251,14 @@ body {
     margin-top: 15rem; }
     .your-help__content__card {
       margin: 0 9rem; }
+
+.contact-us {
+  padding: 15rem;
+  padding-top: 5rem; }
+  .contact-us__content {
+    display: grid;
+    margin-top: 15rem; }
+    .contact-us__content__info__email {
+      margin-top: 5.5rem; }
+    .contact-us__content__form {
+      display: block; }
