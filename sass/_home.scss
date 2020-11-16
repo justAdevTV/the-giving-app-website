@@ -62,7 +62,8 @@
 }
 
 .about-us {
-  padding: 25rem 15rem;
+  padding: 15rem;
+  padding-top: 25rem;
 
   &__difference {
     width: 100%;
@@ -118,6 +119,20 @@
           height: 70rem;
         }
       }
+    }
+  }
+}
+
+.your-help {
+  padding: 15rem;
+  padding-top: 5rem;
+
+  &__content {
+    display: flex;
+    margin-top: 15rem;
+
+    &__card {
+      margin: 0 9rem;
     }
   }
 }
