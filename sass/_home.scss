@@ -90,5 +90,34 @@
   }
 
   &__cooler {
+    margin-top: 30rem;
+    &__content {
+      display: flex;
+      margin-top: 15rem;
+
+      &__card {
+        flex: 1;
+        margin: auto 0;
+        padding: 7rem 10rem;
+        height: min-content;
+        & > p {
+          margin-top: 8rem;
+        }
+
+        & button {
+          margin-top: 5rem;
+        }
+      }
+      &__preview {
+        flex: 1;
+        display: flex;
+
+        &__image {
+          display: block;
+          margin: auto;
+          height: 70rem;
+        }
+      }
+    }
   }
 }
