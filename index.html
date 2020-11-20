@@ -94,7 +94,7 @@
         <div class="card card--info your-help__content__card">
           <img src="/public/images/charity.jpg" alt="person handing out juice" class="card__image" />
           <h3 class="heading-3 card__header">I'm a charity.</h3>
-          <p class="paragraph card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo laoreet sit amet cursus sit amet dictum.</p>
+          <p class="paragraph card__paragraph">If you are a non-profit organization looking to join The Giving App, click below to submit your application and help us on our mission to change the world.</p>
           <!-- TODO: Add redirect -->
           <center>
             <button class="btn card__button">LEARN MORE</button>
@@ -123,7 +123,21 @@
         </div>
         <!-- Contact Form -->
         <form class="contact-us__content__form">
-          FORM HERE
+          <!-- Name -->
+          <label for="firstName" class="label">NAME</label>
+          <div class="contact-us__content__form__inline-inputs">
+            <input id="firstName" name="firstName" placeholder="First Name" type="text" class="input">
+            <input id="lastName" name="lastName" placeholder="Last Name" type="text" class="input">
+          </div>
+          <!-- Email -->
+          <label for="email" class="label">EMAIL</label>
+          <input id="email" name="email" placeholder="Email Address" type="email" class="input">
+          
+          <!-- Message -->
+          <label for="message" class="label">MESSAGE</label>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Begin Typing" class="textarea"></textarea>
+          <!-- Submit -->
+          <button class="btn" type="submit">SUBMIT</button>
         </form>
       </div>
     </section>

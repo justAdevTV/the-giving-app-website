@@ -143,15 +143,36 @@
 
   &__content {
     display: grid;
+    grid-template: "info form form";
     margin-top: 15rem;
 
     &__info {
+      grid-area: info;
+
       &__email {
         margin-top: 5.5rem;
       }
     }
     &__form {
       display: block;
+      grid-area: form;
+
+      & input {
+        margin-bottom: 5rem;
+      }
+
+      & textarea {
+        margin-bottom: 5rem;
+      }
+
+      &__inline-inputs {
+        display: flex;
+        justify-content: space-between;
+
+        & > input:first-child {
+          margin-right: 5rem;
+        }
+      }
     }
   }
 }
