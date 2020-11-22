@@ -1,0 +1,71 @@
+.footer {
+  display: grid;
+  row-gap: 5.2rem;
+  color: $color-ghost-white;
+  background-color: $color-primary;
+  grid-template:
+    "image . . quick-links . socials"
+    "legal . . . . .";
+  padding: 4.5rem 25rem 4.5rem 5rem;
+
+  &__header {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    display: block;
+    grid-area: image;
+    width: 22.5rem;
+    height: 22.5rem;
+  }
+
+  &__legal {
+    grid-area: legal;
+    font-size: 2.4rem;
+  }
+
+  &__link {
+    & > a {
+      color: $color-white;
+      text-decoration: none;
+      font-size: 2.4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &s {
+      grid-area: quick-links;
+      margin-top: 3.8rem;
+      list-style: none;
+    }
+  }
+  &__socials {
+    grid-area: socials;
+    margin-top: 3.8rem;
+    &__link {
+      position: relative;
+      display: inline-block;
+      width: 5rem;
+      height: 5rem;
+      background-color: $color-ghost-white;
+      border-radius: 50%;
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+      &s {
+      }
+
+      &__icon {
+        position: absolute;
+        width: 2.4rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

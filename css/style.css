@@ -129,6 +129,7 @@ body {
   border-radius: 4.5rem;
   border: 1px solid #070707;
   padding: 2.8rem 4.5rem;
+  font-size: 2.4rem;
   width: -webkit-fill-available;
   resize: none; }
   .textarea::placeholder {
@@ -301,3 +302,50 @@ body {
         justify-content: space-between; }
         .contact-us__content__form__inline-inputs > input:first-child {
           margin-right: 5rem; }
+
+.footer {
+  display: grid;
+  row-gap: 5.2rem;
+  color: #fbf9ff;
+  background-color: #514a9d;
+  grid-template: "image . . quick-links . socials" "legal . . . . .";
+  padding: 4.5rem 25rem 4.5rem 5rem; }
+  .footer__header {
+    font-size: 4rem;
+    margin-bottom: 2rem; }
+  .footer__img {
+    display: block;
+    grid-area: image;
+    width: 22.5rem;
+    height: 22.5rem; }
+  .footer__legal {
+    grid-area: legal;
+    font-size: 2.4rem; }
+  .footer__link > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.4rem; }
+  .footer__link:not(:last-child) {
+    margin-bottom: 2rem; }
+  .footer__links {
+    grid-area: quick-links;
+    margin-top: 3.8rem;
+    list-style: none; }
+  .footer__socials {
+    grid-area: socials;
+    margin-top: 3.8rem; }
+    .footer__socials__link {
+      position: relative;
+      display: inline-block;
+      width: 5rem;
+      height: 5rem;
+      background-color: #fbf9ff;
+      border-radius: 50%; }
+      .footer__socials__link:not(:last-child) {
+        margin-right: 1.5rem; }
+      .footer__socials__link__icon {
+        position: absolute;
+        width: 2.4rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
