@@ -233,13 +233,15 @@ body {
         transform: translate(-50%, -50%); }
 
 .team {
-  padding: 5rem 12.5rem; }
+  padding: 5rem 12.5rem;
+  padding-bottom: 40rem; }
   .team__header {
     margin-left: 0.5rem; }
   .team__tiles {
     display: grid;
     column-gap: 22.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    row-gap: 15rem;
+    grid-template-columns: 1fr 1fr;
     margin-top: 15rem; }
   .team__tile__image {
     display: block;

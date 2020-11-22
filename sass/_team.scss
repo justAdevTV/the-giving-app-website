@@ -1,5 +1,6 @@
 .team {
   padding: 5rem 12.5rem;
+  padding-bottom: 40rem;
 
   &__header {
     margin-left: 0.5rem;
@@ -8,7 +9,8 @@
   &__tiles {
     display: grid;
     column-gap: 22.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    row-gap: 15rem;
+    grid-template-columns: 1fr 1fr;
     margin-top: 15rem;
   }
 
