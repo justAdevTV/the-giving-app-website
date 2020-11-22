@@ -130,6 +130,7 @@ body {
   border: 1px solid #070707;
   padding: 2.8rem 4.5rem;
   font-size: 2.4rem;
+  font-family: "Khula", sans-serif;
   width: -webkit-fill-available;
   resize: none; }
   .textarea::placeholder {
@@ -207,7 +208,7 @@ body {
       margin-bottom: 7.5rem; }
   .header__text {
     text-align: center;
-    margin-top: 40rem;
+    margin-top: 30rem;
     color: #fbf9ff; }
     .header__text--main {
       display: block;
