@@ -1,6 +1,11 @@
 @import "base";
 @import "typography";
-@import "components";
+
+// Components
 @import "navigation";
-@import "home";
+@import "components";
 @import "footer";
+
+// Pages
+@import "team";
+@import "home";
