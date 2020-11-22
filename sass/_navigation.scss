@@ -9,6 +9,10 @@
   display: flex;
   color: $color-ghost-white;
 
+  &--no-fix {
+    position: relative;
+  }
+
   &__logo {
     width: 15rem;
     height: 15rem;
@@ -50,6 +54,10 @@
     font-size: 2.4rem;
     list-style: none;
     color: $color-ghost-white;
+
+    &--inverted a {
+      color: $color-black !important;
+    }
   }
 
   & > button {
