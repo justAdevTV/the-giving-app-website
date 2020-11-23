@@ -87,6 +87,8 @@
       &__item {
         &__number {
           display: block;
+          margin-left: auto;
+          margin-right: auto;
           font-weight: 700;
           text-align: center;
           background-color: $color-primary;
@@ -108,6 +110,17 @@
           margin-top: 1rem;
         }
       }
+    }
+  }
+
+  &__annual-report {
+    display: flex;
+    margin-top: 15rem;
+    margin-bottom: 25rem;
+
+    & > button {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
