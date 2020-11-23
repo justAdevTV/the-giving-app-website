@@ -70,4 +70,44 @@
       }
     }
   }
+
+  &__values {
+    padding: 20rem 15rem;
+    padding-bottom: 5rem;
+
+    &__list {
+      margin-top: 15rem;
+      display: grid;
+      padding-left: 8rem;
+      padding-right: 4rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 10rem;
+      column-gap: 11.5rem;
+
+      &__item {
+        &__number {
+          display: block;
+          font-weight: 700;
+          text-align: center;
+          background-color: $color-primary;
+          border-radius: 50%;
+          width: 20rem;
+          height: 20rem;
+          font-size: 7.2rem;
+          color: $color-ghost-white;
+          line-height: 21.5rem;
+          user-select: none;
+        }
+        &__heading {
+          margin-top: 5rem;
+          & > span {
+            color: $color-primary;
+          }
+        }
+        & > p {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
 }
