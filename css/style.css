@@ -145,7 +145,7 @@ body {
 .card {
   border-radius: 4.5rem;
   box-shadow: 0px 3px 6px #00000029;
-  width: 100%; }
+  width: -webkit-fill-available; }
   .card__header {
     margin-top: 4.5rem; }
   .card__paragraph {
@@ -478,7 +478,7 @@ body {
 .get-involved__header {
   position: relative;
   height: 100vh;
-  background-image: url("/public/images/team-pic.jpeg");
+  background-image: url("/public/images/volunteer.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;
@@ -500,3 +500,13 @@ body {
       margin-top: auto;
       margin-left: 10rem;
       margin-bottom: 10rem; }
+
+.get-involved__who-are-you {
+  padding: 25rem 24rem; }
+  .get-involved__who-are-you > h2 {
+    text-align: center; }
+  .get-involved__who-are-you__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16rem;
+    margin-top: 15rem; }

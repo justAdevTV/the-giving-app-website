@@ -31,4 +31,18 @@
       }
     }
   }
+
+  &__who-are-you {
+    padding: 25rem 24rem;
+    & > h2 {
+      text-align: center;
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 16rem;
+      margin-top: 15rem;
+    }
+  }
 }
