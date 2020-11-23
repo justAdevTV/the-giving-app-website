@@ -31,4 +31,43 @@
       }
     }
   }
+
+  &__mission {
+    padding-top: 25rem;
+    padding-bottom: 15rem;
+
+    width: 100%;
+
+    & > h2 {
+      margin-left: 15rem;
+    }
+
+    &__description {
+      position: relative;
+      width: 58rem;
+      margin-top: 15rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      &::before {
+        content: "";
+        bottom: -5.75rem;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 25%;
+        height: 1px;
+        background-color: $color-black;
+      }
+    }
+
+    &__author {
+      margin-top: 15rem;
+      text-align: center;
+
+      & > span {
+        display: block;
+      }
+    }
+  }
 }

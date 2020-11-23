@@ -402,3 +402,30 @@ body {
       margin-top: auto;
       margin-left: 10rem;
       margin-bottom: 10rem; }
+
+.about__mission {
+  padding-top: 25rem;
+  padding-bottom: 15rem;
+  width: 100%; }
+  .about__mission > h2 {
+    margin-left: 15rem; }
+  .about__mission__description {
+    position: relative;
+    width: 58rem;
+    margin-top: 15rem;
+    margin-left: auto;
+    margin-right: auto; }
+    .about__mission__description::before {
+      content: "";
+      bottom: -5.75rem;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      width: 25%;
+      height: 1px;
+      background-color: #070707; }
+  .about__mission__author {
+    margin-top: 15rem;
+    text-align: center; }
+    .about__mission__author > span {
+      display: block; }
