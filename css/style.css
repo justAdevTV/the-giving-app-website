@@ -40,7 +40,7 @@ body {
 
 .heading-4 {
   font-family: "Khula", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 3.6rem; }
 
 .paragraph {
@@ -522,3 +522,26 @@ body {
   margin-right: auto;
   width: 99.6rem;
   font-size: 3.6rem; }
+
+.get-involved__your-help__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 18rem;
+  column-gap: 18.5rem;
+  margin-top: 9rem; }
+  .get-involved__your-help__list__item > p {
+    margin-top: 1rem;
+    text-align: justify; }
+  .get-involved__your-help__list__icon {
+    display: flex;
+    width: 39rem;
+    height: 39rem;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029; }
+    .get-involved__your-help__list__icon img {
+      display: block;
+      width: 40%;
+      margin: auto; }
+  .get-involved__your-help__list__heading {
+    text-align: center;
+    margin-top: 5rem; }
