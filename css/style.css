@@ -562,3 +562,28 @@ body {
     column-gap: 16rem;
     grid-template-columns: 1fr 1fr;
     margin-top: 15rem; }
+
+.letter {
+  margin: 0 15rem;
+  margin-top: 8rem;
+  margin-bottom: 28rem; }
+  .letter__content {
+    display: grid;
+    grid-template: "hello ." "message picture";
+    column-gap: 10rem;
+    row-gap: 6rem;
+    margin-top: 15rem; }
+    .letter__content > h3 {
+      grid-area: hello; }
+    .letter__content > img {
+      grid-area: picture;
+      display: block;
+      width: 100%;
+      border-radius: 2rem; }
+    .letter__content > p {
+      grid-area: message;
+      text-align: justify;
+      font-family: "Poppins", sans-serif; }
+      .letter__content > p span:not(:first-child) {
+        display: inline-block;
+        margin-top: 3rem; }
