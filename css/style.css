@@ -245,7 +245,7 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: url("/public/images/home_banner.jpg");
+  background-image: url("public/images/home_banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;
@@ -390,7 +390,7 @@ body {
 .about__header {
   position: relative;
   height: 100vh;
-  background-image: url("/public/images/team-pic.jpeg");
+  background-image: url("public/images/team-pic.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;
@@ -483,7 +483,7 @@ body {
 .get-involved__header {
   position: relative;
   height: 100vh;
-  background-image: url("/public/images/volunteer.jpg");
+  background-image: url("public/images/volunteer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;
