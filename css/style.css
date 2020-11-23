@@ -157,6 +157,11 @@ body {
     display: block;
     width: 100%;
     border-radius: 4.5rem; }
+  .card__icon {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 11rem; }
   .card--info {
     padding: 6.5rem;
     padding-top: 11rem;
@@ -478,11 +483,11 @@ body {
 .get-involved__header {
   position: relative;
   height: 100vh;
-  background-image: url("/public/images/volunteer.jpeg");
+  background-image: url("/public/images/volunteer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;
-  background-position: center; }
+  background-position: bottom; }
   .get-involved__header__overlay {
     z-index: 1;
     position: absolute;
@@ -545,3 +550,15 @@ body {
   .get-involved__your-help__list__heading {
     text-align: center;
     margin-top: 5rem; }
+
+.get-involved__contribute {
+  margin-top: 11rem;
+  padding: 0 24rem;
+  padding-bottom: 31.5rem; }
+  .get-involved__contribute > h2 {
+    text-align: center; }
+  .get-involved__contribute__options {
+    display: grid;
+    column-gap: 16rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15rem; }

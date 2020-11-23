@@ -2,11 +2,11 @@
   &__header {
     position: relative;
     height: 100vh;
-    background-image: url("/public/images/volunteer.jpeg");
+    background-image: url("/public/images/volunteer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: border-box;
-    background-position: center;
+    background-position: bottom;
 
     &__overlay {
       z-index: 1;
@@ -94,6 +94,23 @@
         text-align: center;
         margin-top: 5rem;
       }
+    }
+  }
+
+  &__contribute {
+    margin-top: 11rem;
+    padding: 0 24rem;
+    padding-bottom: 31.5rem;
+
+    & > h2 {
+      text-align: center;
+    }
+
+    &__options {
+      display: grid;
+      column-gap: 16rem;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 15rem;
     }
   }
 }

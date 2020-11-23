@@ -87,6 +87,13 @@
     border-radius: 4.5rem;
   }
 
+  &__icon {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 11rem;
+  }
+
   &--info {
     padding: 6.5rem;
     padding-top: 11rem;
