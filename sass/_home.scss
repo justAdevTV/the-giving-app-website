@@ -47,6 +47,15 @@
       font-size: 7.2rem;
       font-weight: 800;
     }
+
+    @media (max-width: 1000px) {
+      &--main {
+        font-size: 3rem;
+      }
+      &--sub {
+        font-size: 5rem;
+      }
+    }
   }
 
   &__buttons {
@@ -57,6 +66,13 @@
 
     & > button {
       margin: 0 2.9rem;
+    }
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      & > button:last-child {
+        margin-top: 3.5rem;
+      }
     }
   }
 }

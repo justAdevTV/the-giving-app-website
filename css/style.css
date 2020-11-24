@@ -372,6 +372,11 @@ body {
       font-family: "Poppins", sans-serif;
       font-size: 7.2rem;
       font-weight: 800; }
+    @media (max-width: 1000px) {
+      .header__text--main {
+        font-size: 3rem; }
+      .header__text--sub {
+        font-size: 5rem; } }
   .header__buttons {
     display: flex;
     margin-top: 10rem;
@@ -379,6 +384,11 @@ body {
     margin-right: auto; }
     .header__buttons > button {
       margin: 0 2.9rem; }
+    @media (max-width: 1000px) {
+      .header__buttons {
+        flex-direction: column; }
+        .header__buttons > button:last-child {
+          margin-top: 3.5rem; } }
 
 .about-us {
   padding: 15rem;
