@@ -412,6 +412,9 @@ body {
         width: 25%;
         height: 1px;
         background-color: #070707; }
+    @media (max-width: 1150px) {
+      .about-us__difference > p {
+        width: 100%; } }
   .about-us__cooler {
     margin-top: 30rem; }
     .about-us__cooler__content {
