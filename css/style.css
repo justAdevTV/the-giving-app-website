@@ -416,6 +416,7 @@ body {
     margin-top: 30rem; }
     .about-us__cooler__content {
       display: grid;
+      grid-template-areas: "card preview";
       grid-template-columns: 1.5fr 1fr;
       grid-column-gap: 15rem;
       grid-row-gap: 5rem;
