@@ -128,11 +128,14 @@
   padding-top: 5rem;
 
   &__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 18rem;
+    row-gap: 2.5rem;
     margin-top: 15rem;
 
-    &__card {
-      margin: 0 9rem;
+    @media (max-width: 1450px) {
+      grid-template-columns: 1fr;
     }
   }
 }

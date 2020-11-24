@@ -81,6 +81,11 @@
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
+    display: none;
+
+    @media (max-width: 1330px) {
+      display: block;
+    }
 
     & > img {
       display: block;

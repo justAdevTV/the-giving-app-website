@@ -107,7 +107,11 @@ body {
   .nav__menu-trigger {
     margin-left: auto;
     margin-top: auto;
-    margin-bottom: auto; }
+    margin-bottom: auto;
+    display: none; }
+    @media (max-width: 1330px) {
+      .nav__menu-trigger {
+        display: block; } }
     .nav__menu-trigger > img {
       display: block;
       width: 9rem;
@@ -424,10 +428,14 @@ body {
   padding: 15rem;
   padding-top: 5rem; }
   .your-help__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 18rem;
+    row-gap: 2.5rem;
     margin-top: 15rem; }
-    .your-help__content__card {
-      margin: 0 9rem; }
+    @media (max-width: 1450px) {
+      .your-help__content {
+        grid-template-columns: 1fr; } }
 
 .contact-us {
   padding: 15rem;
