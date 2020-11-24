@@ -405,10 +405,18 @@ body {
   .about-us__cooler {
     margin-top: 30rem; }
     .about-us__cooler__content {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      grid-column-gap: 15rem;
+      grid-row-gap: 5rem;
       margin-top: 15rem; }
+      @media (max-width: 1300px) {
+        .about-us__cooler__content {
+          margin-top: 7rem;
+          grid-template-columns: 1fr;
+          grid-template-areas: "preview" "card"; } }
       .about-us__cooler__content__card {
-        flex: 1;
+        grid-area: card;
         margin: auto 0;
         padding: 7rem 10rem;
         height: min-content; }
@@ -417,7 +425,7 @@ body {
         .about-us__cooler__content__card button {
           margin-top: 5rem; }
       .about-us__cooler__content__preview {
-        flex: 1;
+        grid-area: preview;
         display: flex; }
         .about-us__cooler__content__preview__image {
           display: block;

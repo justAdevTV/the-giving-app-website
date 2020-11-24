@@ -93,11 +93,24 @@
   &__cooler {
     margin-top: 30rem;
     &__content {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      grid-column-gap: 15rem;
+      grid-row-gap: 5rem;
+
       margin-top: 15rem;
 
+      @media (max-width: 1300px) {
+        margin-top: 7rem;
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "preview"
+          "card";
+      }
+
       &__card {
-        flex: 1;
+        grid-area: card;
         margin: auto 0;
         padding: 7rem 10rem;
         height: min-content;
@@ -110,7 +123,7 @@
         }
       }
       &__preview {
-        flex: 1;
+        grid-area: preview;
         display: flex;
 
         &__image {
