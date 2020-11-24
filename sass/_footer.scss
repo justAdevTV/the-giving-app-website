@@ -8,6 +8,13 @@
     "legal . . . . .";
   padding: 4.5rem 25rem 4.5rem 5rem;
 
+  @media (max-width: 1250px) {
+    display: block;
+    text-align: center;
+    padding: 5rem;
+    padding-top: 7rem;
+  }
+
   &__header {
     font-size: 4rem;
     margin-bottom: 2rem;
@@ -18,11 +25,19 @@
     grid-area: image;
     width: 22.5rem;
     height: 22.5rem;
+
+    @media (max-width: 1250px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__legal {
     grid-area: legal;
     font-size: 2.4rem;
+    @media (max-width: 1250px) {
+      margin-top: 17rem;
+    }
   }
 
   &__link {
@@ -40,11 +55,19 @@
       grid-area: quick-links;
       margin-top: 3.8rem;
       list-style: none;
+      @media (max-width: 1250px) {
+        margin-top: 5rem;
+      }
     }
   }
   &__socials {
     grid-area: socials;
     margin-top: 3.8rem;
+
+    @media (max-width: 1250px) {
+      margin-top: 7rem;
+    }
+
     &__link {
       position: relative;
       display: inline-block;
