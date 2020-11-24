@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_3);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #514a9d;
+        stroke-linecap: round;
+        stroke-width: 3px;
+      }
+    </style>
+    <clipPath id="clip-Artboard_3">
+      <rect width="33" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_3" data-name="Artboard – 3" class="cls-1">
+    <g id="Group_89" data-name="Group 89" transform="translate(-627.5 -180.5)">
+      <line id="Line_9" data-name="Line 9" class="cls-2" y1="16.375" x2="16.375" transform="translate(635.5 188.5)"/>
+      <line id="Line_10" data-name="Line 10" class="cls-2" x1="16.375" y1="16.375" transform="translate(635.5 188.5)"/>
+    </g>
+  </g>
+</svg>
