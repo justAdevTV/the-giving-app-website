@@ -114,12 +114,15 @@ body {
       height: 9rem; }
   .nav__mobile {
     position: absolute;
+    display: none;
     z-index: 999;
     background-color: #0000005e;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0; }
+    .nav__mobile--active {
+      display: block; }
     .nav__mobile__content {
       position: absolute;
       right: 0;

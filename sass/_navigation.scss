@@ -91,12 +91,17 @@
 
   &__mobile {
     position: absolute;
+    display: none;
     z-index: 999;
     background-color: $color-side-nav-overlay;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
+
+    &--active {
+      display: block;
+    }
 
     &__content {
       position: absolute;

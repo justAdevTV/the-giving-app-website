@@ -11,6 +11,10 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       rel="shortcut icon"
       type="image/png"
       href="images/favicon-32x32.png"
@@ -26,7 +30,7 @@
         <img src="public/images/logo_white.png" alt="Company Logo" />
       </a>
       <!-- Mobile Trigger -->
-      <a href="#" class="nav__menu-trigger"
+      <a href="#" class="nav__menu-trigger" onclick="showSideNav()"
         ><img src="public/icons/hamburger-white.svg" alt="icon of menu"
       /></a>
       <!-- Full links -->
@@ -45,9 +49,12 @@
         <button class="btn btn--large">GET INVOLVED</button>
       </div>
       <!-- Mobile -->
-      <div class="nav__mobile">
-        <div class="nav__mobile__content">
-          <a href="#" class="nav__mobile__close"
+      <div id="side-nav" class="nav__mobile animate__animated animate__fadeIn">
+        <div
+          id="side-nav-content"
+          class="nav__mobile__content animate__animated"
+        >
+          <a href="#" class="nav__mobile__close" onclick="hideSideNav()"
             ><img src="public/icons/close-icon.svg" alt="icon for closing"
           /></a>
           <img
@@ -292,4 +299,5 @@
       <p class="footer__legal">501(c)(3) - EIN: 84-3263491. Copyright 2020.</p>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
