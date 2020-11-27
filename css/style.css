@@ -393,6 +393,9 @@ body {
 .about-us {
   padding: 15rem;
   padding-top: 25rem; }
+  @media (max-width: 800px) {
+    .about-us {
+      padding: 5rem; } }
   .about-us__difference {
     width: 100%;
     display: flex;
@@ -438,6 +441,11 @@ body {
           margin-top: 8rem; }
         .about-us__cooler__content__card button {
           margin-top: 5rem; }
+        @media (max-width: 800px) {
+          .about-us__cooler__content__card {
+            padding: 5rem 3.5rem; }
+            .about-us__cooler__content__card > p {
+              margin-top: 2rem; } }
       .about-us__cooler__content__preview {
         grid-area: preview;
         display: flex; }
@@ -449,6 +457,9 @@ body {
 .your-help {
   padding: 15rem;
   padding-top: 5rem; }
+  @media (max-width: 800px) {
+    .your-help {
+      padding: 5rem; } }
   .your-help__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -462,6 +473,9 @@ body {
 .contact-us {
   padding: 15rem;
   padding-top: 5rem; }
+  @media (max-width: 800px) {
+    .contact-us {
+      padding: 5rem; } }
   .contact-us__content {
     display: grid;
     grid-template: "info form form";

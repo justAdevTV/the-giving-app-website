@@ -79,6 +79,10 @@
 
 .about-us {
   padding: 15rem;
+
+  @media (max-width: 800px) {
+    padding: 5rem;
+  }
   padding-top: 25rem;
 
   &__difference {
@@ -143,6 +147,13 @@
         & button {
           margin-top: 5rem;
         }
+
+        @media (max-width: 800px) {
+          padding: 5rem 3.5rem;
+          & > p {
+            margin-top: 2rem;
+          }
+        }
       }
       &__preview {
         grid-area: preview;
@@ -160,6 +171,11 @@
 
 .your-help {
   padding: 15rem;
+
+  @media (max-width: 800px) {
+    padding: 5rem;
+  }
+
   padding-top: 5rem;
 
   &__content {
@@ -177,6 +193,9 @@
 
 .contact-us {
   padding: 15rem;
+  @media (max-width: 800px) {
+    padding: 5rem;
+  }
   padding-top: 5rem;
 
   &__content {
