@@ -377,6 +377,21 @@ body {
         font-size: 3rem; }
       .header__text--sub {
         font-size: 5rem; } }
+    @media (max-width: 690px) {
+      .header__text--main {
+        font-size: 2.2rem; }
+      .header__text--sub {
+        font-size: 3.75rem; } }
+    @media (max-width: 500px) {
+      .header__text--main {
+        font-size: 1.8rem; }
+      .header__text--sub {
+        font-size: 2.75rem; } }
+    @media (max-width: 400px) {
+      .header__text--main {
+        font-size: 1.7rem; }
+      .header__text--sub {
+        font-size: 2.7rem; } }
   .header__buttons {
     display: flex;
     margin-top: 10rem;
