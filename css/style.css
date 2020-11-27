@@ -465,7 +465,12 @@ body {
   .contact-us__content {
     display: grid;
     grid-template: "info form form";
+    grid-row-gap: 5rem;
     margin-top: 15rem; }
+    @media (max-width: 1425px) {
+      .contact-us__content {
+        margin-top: 5rem;
+        grid-template: "info" "form"; } }
     .contact-us__content__info {
       grid-area: info; }
       .contact-us__content__info__email {
@@ -473,6 +478,10 @@ body {
     .contact-us__content__form {
       display: block;
       grid-area: form; }
+      @media (max-width: 1050px) {
+        .contact-us__content__form > button {
+          display: block;
+          margin: 0 auto; } }
       .contact-us__content__form input {
         margin-bottom: 5rem; }
       .contact-us__content__form textarea {
@@ -482,6 +491,12 @@ body {
         justify-content: space-between; }
         .contact-us__content__form__inline-inputs > input:first-child {
           margin-right: 5rem; }
+        @media (max-width: 1050px) {
+          .contact-us__content__form__inline-inputs {
+            flex-direction: column; }
+            .contact-us__content__form__inline-inputs > input:first-child {
+              margin-right: 0;
+              margin-bottom: 1rem; } }
 
 .team {
   padding: 5rem 12.5rem;

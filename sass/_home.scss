@@ -182,7 +182,16 @@
   &__content {
     display: grid;
     grid-template: "info form form";
+    grid-row-gap: 5rem;
     margin-top: 15rem;
+
+    @media (max-width: 1425px) {
+      margin-top: 5rem;
+
+      grid-template:
+        "info"
+        "form";
+    }
 
     &__info {
       grid-area: info;
@@ -194,6 +203,13 @@
     &__form {
       display: block;
       grid-area: form;
+
+      @media (max-width: 1050px) {
+        & > button {
+          display: block;
+          margin: 0 auto;
+        }
+      }
 
       & input {
         margin-bottom: 5rem;
@@ -209,6 +225,14 @@
 
         & > input:first-child {
           margin-right: 5rem;
+        }
+
+        @media (max-width: 1050px) {
+          flex-direction: column;
+          & > input:first-child {
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
         }
       }
     }
