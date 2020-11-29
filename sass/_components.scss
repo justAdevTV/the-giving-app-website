@@ -98,6 +98,9 @@
     padding: 6.5rem;
     padding-top: 11rem;
     padding-bottom: 10rem;
+    @media (max-width: 500px) {
+      padding: 5rem 3.5rem;
+    }
   }
 }
 

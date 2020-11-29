@@ -68,6 +68,10 @@ body {
   @media (max-width: 620px) {
     .paragraph {
       font-size: 2.8rem; } }
+  @media (max-width: 500px) {
+    .paragraph {
+      font-size: 2rem;
+      line-height: 3rem; } }
   @media (max-width: 420px) {
     .paragraph {
       font-size: 1.6rem;
@@ -264,6 +268,9 @@ body {
     padding: 6.5rem;
     padding-top: 11rem;
     padding-bottom: 10rem; }
+    @media (max-width: 500px) {
+      .card--info {
+        padding: 5rem 3.5rem; } }
 
 .label {
   display: block;
@@ -436,6 +443,9 @@ body {
   @media (max-width: 800px) {
     .about-us {
       padding: 5rem; } }
+  @media (max-width: 450px) {
+    .about-us {
+      padding: 3rem; } }
   .about-us__difference {
     width: 100%;
     display: flex;
@@ -499,6 +509,10 @@ body {
           display: block;
           margin: auto;
           height: 70rem; }
+          @media (max-width: 450px) {
+            .about-us__cooler__content__preview__image {
+              height: initial;
+              width: 20rem; } }
 
 .your-help {
   padding: 15rem;
@@ -506,6 +520,9 @@ body {
   @media (max-width: 800px) {
     .your-help {
       padding: 5rem; } }
+  @media (max-width: 450px) {
+    .your-help {
+      padding: 3rem; } }
   .your-help__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -525,6 +542,9 @@ body {
   @media (max-width: 800px) {
     .contact-us {
       padding: 5rem; } }
+  @media (max-width: 450px) {
+    .contact-us {
+      padding: 3rem; } }
   .contact-us__content {
     display: grid;
     grid-template: "info form form";
@@ -534,6 +554,9 @@ body {
       .contact-us__content {
         margin-top: 5rem;
         grid-template: "info" "form"; } }
+    @media (max-width: 575px) {
+      .contact-us__content {
+        display: block; } }
     .contact-us__content__info {
       grid-area: info; }
       .contact-us__content__info__email {
@@ -545,6 +568,9 @@ body {
         .contact-us__content__form > button {
           display: block;
           margin: 0 auto; } }
+      @media (max-width: 575px) {
+        .contact-us__content__form {
+          margin-top: 5rem; } }
       .contact-us__content__form input {
         margin-bottom: 5rem; }
       .contact-us__content__form textarea {
