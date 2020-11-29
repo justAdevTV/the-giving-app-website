@@ -26,6 +26,11 @@
       width: 100%;
       height: 100%;
     }
+
+    @media (max-width: 475px) {
+      width: 10rem;
+      height: 10rem;
+    }
   }
 
   &__link {
@@ -95,6 +100,10 @@
       display: block;
       width: 9rem;
       height: 9rem;
+      @media (max-width: 475px) {
+        width: 7rem;
+        height: 7rem;
+      }
     }
   }
 
@@ -121,6 +130,11 @@
       background-color: $color-ghost-white;
       box-shadow: $shadow-1;
       padding: 4.5rem 2.5rem;
+
+      @media (max-width: 450px) {
+        width: 30rem;
+        padding: 3.5rem 2.5rem;
+      }
     }
 
     &__close {
@@ -141,6 +155,7 @@
         text-align: center;
         padding-bottom: 5.75rem;
         margin-top: 5rem;
+        list-style: none;
 
         &::after {
           content: "";
