@@ -87,6 +87,9 @@ body {
   z-index: 999;
   display: flex;
   color: #fbf9ff; }
+  @media (max-width: 675px) {
+    .nav {
+      padding: 3rem; } }
   .nav--no-fix {
     position: relative; }
   .nav__logo {
@@ -210,6 +213,14 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.15s ease-in; }
+  @media (max-width: 525px) {
+    .btn {
+      padding: 1.75rem 2.2rem;
+      font-size: 2rem; } }
+  @media (max-width: 400px) {
+    .btn {
+      padding: 1.4rem 1.7rem;
+      font-size: 1.6rem; } }
   .btn:hover {
     background-color: #413c7c;
     transform: translateY(-2px); }

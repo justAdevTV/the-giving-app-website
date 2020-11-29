@@ -9,6 +9,10 @@
   display: flex;
   color: $color-ghost-white;
 
+  @media (max-width: 675px) {
+    padding: 3rem;
+  }
+
   &--no-fix {
     position: relative;
   }
