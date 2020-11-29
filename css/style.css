@@ -466,7 +466,7 @@ body {
         font-size: 2.7rem; } }
   .header__buttons {
     display: flex;
-    margin-top: 10rem;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto; }
     .header__buttons > button {
