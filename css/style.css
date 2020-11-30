@@ -63,7 +63,7 @@ body {
   font-size: 3.6rem; }
   @media (max-width: 620px) {
     .heading-4 {
-      font-size: 2.25rem; } }
+      font-size: 3rem; } }
   @media (max-width: 420px) {
     .heading-4 {
       font-size: 1.6rem; } }
@@ -775,6 +775,12 @@ body {
 .about__values {
   padding: 20rem 15rem;
   padding-bottom: 5rem; }
+  @media (max-width: 1150px) {
+    .about__values {
+      padding: 7rem 10rem; } }
+  @media (max-width: 600px) {
+    .about__values {
+      padding: 5rem 6rem; } }
   .about__values__list {
     margin-top: 15rem;
     display: grid;
@@ -783,6 +789,22 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10rem;
     column-gap: 11.5rem; }
+    @media (max-width: 1250px) {
+      .about__values__list {
+        margin-top: 8rem;
+        grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 1250px) {
+      .about__values__list {
+        padding-left: 2rem;
+        column-gap: 10rem;
+        row-gap: 7rem; } }
+    @media (max-width: 800px) {
+      .about__values__list {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        grid-template-columns: 1fr;
+        row-gap: 5rem; } }
     .about__values__list__item__number {
       display: block;
       margin-left: auto;
@@ -803,11 +825,27 @@ body {
         color: #514a9d; }
     .about__values__list__item > p {
       margin-top: 1rem; }
+      @media (max-width: 1250px) {
+        .about__values__list__item > p {
+          line-height: 3.5rem; } }
+      @media (max-width: 450px) {
+        .about__values__list__item > p {
+          line-height: 3.25rem; } }
+      @media (max-width: 450px) {
+        .about__values__list__item > p {
+          line-height: 3rem; } }
+    @media (max-width: 1250px) {
+      .about__values__list__item--spacer {
+        display: none; } }
 
 .about__annual-report {
   display: flex;
   margin-top: 15rem;
   margin-bottom: 25rem; }
+  @media (max-width: 1000px) {
+    .about__annual-report {
+      margin-top: 5rem;
+      margin-bottom: 15rem; } }
   .about__annual-report > button {
     margin-left: auto;
     margin-right: auto; }
