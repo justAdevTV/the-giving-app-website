@@ -985,6 +985,15 @@ body {
   margin-top: 11rem;
   padding: 0 24rem;
   padding-bottom: 31.5rem; }
+  @media (max-width: 1200px) {
+    .get-involved__contribute {
+      padding: 10rem 8rem; } }
+  @media (max-width: 800px) {
+    .get-involved__contribute {
+      padding: 5rem; } }
+  @media (max-width: 450px) {
+    .get-involved__contribute {
+      padding: 3rem; } }
   .get-involved__contribute > h2 {
     text-align: center; }
   .get-involved__contribute__options {
@@ -992,6 +1001,13 @@ body {
     column-gap: 16rem;
     grid-template-columns: 1fr 1fr;
     margin-top: 15rem; }
+    @media (max-width: 1450px) {
+      .get-involved__contribute__options {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem; } }
+    @media (max-width: 700px) {
+      .get-involved__contribute__options {
+        margin-top: 8rem; } }
 
 .letter {
   margin: 0 15rem;
