@@ -133,7 +133,6 @@
 
       @media (max-width: 450px) {
         width: 30rem;
-        padding: 3.5rem 2.5rem;
       }
     }
 
@@ -147,6 +146,10 @@
       margin-top: 6rem;
       margin-left: auto;
       margin-right: auto;
+
+      @media (max-width: 450px) {
+        margin-top: 2rem;
+      }
     }
 
     &__link {
@@ -157,6 +160,11 @@
         margin-top: 5rem;
         list-style: none;
 
+        @media (max-width: 450px) {
+          margin-top: 1.25rem;
+          padding-bottom: 2rem;
+        }
+
         &::after {
           content: "";
           position: absolute;
@@ -166,12 +174,19 @@
           width: 14rem;
           height: 3px;
           background-color: $color-gray-light-3;
+
+          @media (max-width: 450px) {
+            height: 1.5px;
+          }
         }
       }
       & > a {
         text-decoration: none;
         user-select: none;
         font-size: 2.4rem;
+        @media (max-width: 450px) {
+          font-size: 2rem;
+        }
         color: $color-black;
       }
 

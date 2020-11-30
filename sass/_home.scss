@@ -109,10 +109,12 @@
 
   @media (max-width: 800px) {
     padding: 5rem;
+    padding-top: 10rem;
   }
 
   @media (max-width: 450px) {
     padding: 3rem;
+    padding-top: 8rem;
   }
   padding-top: 25rem;
 
@@ -197,17 +199,15 @@
       }
       &__preview {
         grid-area: preview;
-        display: flex;
+
+        @media (min-width: 1300px) {
+          display: flex;
+        }
 
         &__image {
           display: block;
           margin: auto;
-          height: 70rem;
-
-          @media (max-width: 450px) {
-            height: initial;
-            width: 20rem;
-          }
+          width: 100%;
         }
       }
     }

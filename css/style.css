@@ -185,8 +185,7 @@ body {
       padding: 4.5rem 2.5rem; }
       @media (max-width: 450px) {
         .nav__mobile__content {
-          width: 30rem;
-          padding: 3.5rem 2.5rem; } }
+          width: 30rem; } }
     .nav__mobile__logo {
       display: block;
       width: 14rem;
@@ -194,12 +193,19 @@ body {
       margin-top: 6rem;
       margin-left: auto;
       margin-right: auto; }
+      @media (max-width: 450px) {
+        .nav__mobile__logo {
+          margin-top: 2rem; } }
     .nav__mobile__links {
       position: relative;
       text-align: center;
       padding-bottom: 5.75rem;
       margin-top: 5rem;
       list-style: none; }
+      @media (max-width: 450px) {
+        .nav__mobile__links {
+          margin-top: 1.25rem;
+          padding-bottom: 2rem; } }
       .nav__mobile__links::after {
         content: "";
         position: absolute;
@@ -209,11 +215,17 @@ body {
         width: 14rem;
         height: 3px;
         background-color: #707070; }
+        @media (max-width: 450px) {
+          .nav__mobile__links::after {
+            height: 1.5px; } }
     .nav__mobile__link > a {
       text-decoration: none;
       user-select: none;
       font-size: 2.4rem;
       color: #070707; }
+      @media (max-width: 450px) {
+        .nav__mobile__link > a {
+          font-size: 2rem; } }
     .nav__mobile__link--active > a {
       color: #514a9d; }
     .nav__mobile__link:not(:first-child) {
@@ -365,6 +377,9 @@ body {
   .footer__header {
     font-size: 4rem;
     margin-bottom: 2rem; }
+    @media (max-width: 600px) {
+      .footer__header {
+        font-size: 3rem; } }
   .footer__img {
     display: block;
     grid-area: image;
@@ -380,12 +395,23 @@ body {
     @media (max-width: 1250px) {
       .footer__legal {
         margin-top: 17rem; } }
+    @media (max-width: 600px) {
+      .footer__legal {
+        font-size: 1.6rem; } }
+    .footer__legal > span {
+      display: block; }
   .footer__link > a {
     color: #ffffff;
     text-decoration: none;
     font-size: 2.4rem; }
+    @media (max-width: 600px) {
+      .footer__link > a {
+        font-size: 1.8rem; } }
   .footer__link:not(:last-child) {
     margin-bottom: 2rem; }
+    @media (max-width: 600px) {
+      .footer__link:not(:last-child) {
+        margin-bottom: 1.5rem; } }
   .footer__links {
     grid-area: quick-links;
     margin-top: 3.8rem;
@@ -491,10 +517,12 @@ body {
   padding-top: 25rem; }
   @media (max-width: 800px) {
     .about-us {
-      padding: 5rem; } }
+      padding: 5rem;
+      padding-top: 10rem; } }
   @media (max-width: 450px) {
     .about-us {
-      padding: 3rem; } }
+      padding: 3rem;
+      padding-top: 8rem; } }
   .about-us__difference {
     width: 100%;
     display: flex;
@@ -552,16 +580,14 @@ body {
             .about-us__cooler__content__card > p {
               margin-top: 2rem; } }
       .about-us__cooler__content__preview {
-        grid-area: preview;
-        display: flex; }
+        grid-area: preview; }
+        @media (min-width: 1300px) {
+          .about-us__cooler__content__preview {
+            display: flex; } }
         .about-us__cooler__content__preview__image {
           display: block;
           margin: auto;
-          height: 70rem; }
-          @media (max-width: 450px) {
-            .about-us__cooler__content__preview__image {
-              height: initial;
-              width: 20rem; } }
+          width: 100%; }
 
 .your-help {
   padding: 15rem;
@@ -698,13 +724,30 @@ body {
   padding-bottom: 15rem;
   width: 100%; }
   .about__mission > h2 {
-    margin-left: 15rem; }
+    margin-left: 10rem; }
+  @media (max-width: 1150px) {
+    .about__mission {
+      padding-top: 15rem;
+      padding-bottom: 0; } }
+  @media (max-width: 600px) {
+    .about__mission > h2 {
+      margin-left: 5rem; } }
+  @media (max-width: 400px) {
+    .about__mission > h2 {
+      margin-left: 3rem; } }
   .about__mission__description {
     position: relative;
     width: 58rem;
     margin-top: 15rem;
     margin-left: auto;
     margin-right: auto; }
+    @media (max-width: 1150px) {
+      .about__mission__description {
+        width: -webkit-fill-available;
+        padding: 0 10rem; } }
+    @media (max-width: 700px) {
+      .about__mission__description {
+        margin-top: 5rem; } }
     .about__mission__description::before {
       content: "";
       bottom: -5.75rem;
@@ -717,6 +760,9 @@ body {
   .about__mission__author {
     margin-top: 15rem;
     text-align: center; }
+    @media (max-width: 900px) {
+      .about__mission__author {
+        margin-top: 10rem; } }
     .about__mission__author > span {
       display: block; }
 

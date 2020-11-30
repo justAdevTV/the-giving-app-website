@@ -48,7 +48,23 @@
     width: 100%;
 
     & > h2 {
-      margin-left: 15rem;
+      margin-left: 10rem;
+    }
+
+    @media (max-width: 1150px) {
+      padding-top: 15rem;
+      padding-bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+      & > h2 {
+        margin-left: 5rem;
+      }
+    }
+    @media (max-width: 400px) {
+      & > h2 {
+        margin-left: 3rem;
+      }
     }
 
     &__description {
@@ -57,6 +73,22 @@
       margin-top: 15rem;
       margin-left: auto;
       margin-right: auto;
+
+      @media (max-width: 1150px) {
+        width: -webkit-fill-available;
+        padding: 0 10rem;
+      }
+
+      @media (max-width: 700px) {
+        margin-top: 5rem;
+      }
+
+      @media (max-width: 600px) {
+        // margin-left: 5rem;
+      }
+      @media (max-width: 400px) {
+        // margin-left: 3rem;
+      }
 
       &::before {
         content: "";
@@ -73,6 +105,10 @@
     &__author {
       margin-top: 15rem;
       text-align: center;
+
+      @media (max-width: 900px) {
+        margin-top: 10rem;
+      }
 
       & > span {
         display: block;

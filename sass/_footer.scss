@@ -18,6 +18,9 @@
   &__header {
     font-size: 4rem;
     margin-bottom: 2rem;
+    @media (max-width: 600px) {
+      font-size: 3rem;
+    }
   }
 
   &__img {
@@ -38,6 +41,13 @@
     @media (max-width: 1250px) {
       margin-top: 17rem;
     }
+
+    @media (max-width: 600px) {
+      font-size: 1.6rem;
+    }
+    & > span {
+      display: block;
+    }
   }
 
   &__link {
@@ -45,10 +55,16 @@
       color: $color-white;
       text-decoration: none;
       font-size: 2.4rem;
+      @media (max-width: 600px) {
+        font-size: 1.8rem;
+      }
     }
 
     &:not(:last-child) {
       margin-bottom: 2rem;
+      @media (max-width: 600px) {
+        margin-bottom: 1.5rem;
+      }
     }
 
     &s {
