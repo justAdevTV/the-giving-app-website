@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 100vh;
-  background-image: url("public/images/home_banner.jpg");
+  background-image: url("../public/images/home_banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;
@@ -47,22 +47,75 @@
       font-size: 7.2rem;
       font-weight: 800;
     }
+
+    @media (max-width: 1000px) {
+      &--main {
+        font-size: 3rem;
+      }
+      &--sub {
+        font-size: 5rem;
+      }
+    }
+
+    @media (max-width: 690px) {
+      &--main {
+        font-size: 2.2rem;
+      }
+      &--sub {
+        font-size: 3.75rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      &--main {
+        font-size: 1.8rem;
+      }
+      &--sub {
+        font-size: 2.75rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      &--main {
+        font-size: 1.7rem;
+      }
+      &--sub {
+        font-size: 2.7rem;
+      }
+    }
   }
 
   &__buttons {
     display: flex;
-    margin-top: 10rem;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
 
     & > button {
       margin: 0 2.9rem;
     }
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      & > button:last-child {
+        margin-top: 3.5rem;
+      }
+    }
   }
 }
 
 .about-us {
   padding: 15rem;
+
+  @media (max-width: 800px) {
+    padding: 5rem;
+    padding-top: 10rem;
+  }
+
+  @media (max-width: 450px) {
+    padding: 3rem;
+    padding-top: 8rem;
+  }
   padding-top: 25rem;
 
   &__difference {
@@ -77,6 +130,10 @@
       margin-left: auto;
       margin-right: auto;
 
+      @media (max-width: 700px) {
+        margin-top: 5rem;
+      }
+
       &::before {
         content: "";
         bottom: -5.75rem;
@@ -88,16 +145,40 @@
         background-color: $color-black;
       }
     }
+    @media (max-width: 1150px) {
+      & > p {
+        width: 100%;
+      }
+    }
   }
 
   &__cooler {
     margin-top: 30rem;
+
+    @media (max-width: 700px) {
+      margin-top: 15rem;
+    }
+
     &__content {
-      display: flex;
+      display: grid;
+      grid-template-areas: "card preview";
+      grid-template-columns: 1.5fr 1fr;
+      grid-column-gap: 5rem;
+      grid-row-gap: 5rem;
+
       margin-top: 15rem;
 
+      @media (max-width: 1300px) {
+        margin-top: 7rem;
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "preview"
+          "card";
+      }
+
       &__card {
-        flex: 1;
+        grid-area: card;
         margin: auto 0;
         padding: 7rem 10rem;
         height: min-content;
@@ -108,15 +189,25 @@
         & button {
           margin-top: 5rem;
         }
+
+        @media (max-width: 800px) {
+          padding: 5rem 3.5rem;
+          & > p {
+            margin-top: 2rem;
+          }
+        }
       }
       &__preview {
-        flex: 1;
-        display: flex;
+        grid-area: preview;
+
+        @media (min-width: 1300px) {
+          display: flex;
+        }
 
         &__image {
           display: block;
           margin: auto;
-          height: 70rem;
+          width: 100%;
         }
       }
     }
@@ -125,26 +216,59 @@
 
 .your-help {
   padding: 15rem;
+
+  @media (max-width: 800px) {
+    padding: 5rem;
+  }
+
+  @media (max-width: 450px) {
+    padding: 3rem;
+  }
+
   padding-top: 5rem;
 
   &__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 18rem;
+    row-gap: 2.5rem;
     margin-top: 15rem;
-
-    &__card {
-      margin: 0 9rem;
+    @media (max-width: 1450px) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: 700px) {
+      margin-top: 8rem;
     }
   }
 }
 
 .contact-us {
   padding: 15rem;
+  @media (max-width: 800px) {
+    padding: 5rem;
+  }
+  @media (max-width: 450px) {
+    padding: 3rem;
+  }
   padding-top: 5rem;
 
   &__content {
     display: grid;
     grid-template: "info form form";
+    grid-row-gap: 5rem;
     margin-top: 15rem;
+
+    @media (max-width: 1425px) {
+      margin-top: 5rem;
+
+      grid-template:
+        "info"
+        "form";
+    }
+
+    @media (max-width: 575px) {
+      display: block;
+    }
 
     &__info {
       grid-area: info;
@@ -156,6 +280,17 @@
     &__form {
       display: block;
       grid-area: form;
+
+      @media (max-width: 1050px) {
+        & > button {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      @media (max-width: 575px) {
+        margin-top: 5rem;
+      }
 
       & input {
         margin-bottom: 5rem;
@@ -171,6 +306,14 @@
 
         & > input:first-child {
           margin-right: 5rem;
+        }
+
+        @media (max-width: 1050px) {
+          flex-direction: column;
+          & > input:first-child {
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
         }
       }
     }

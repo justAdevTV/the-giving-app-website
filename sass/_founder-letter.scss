@@ -2,6 +2,27 @@
   margin: 0 15rem;
   margin-top: 8rem;
   margin-bottom: 28rem;
+
+  & > h1 {
+    @media (max-width: 750px) {
+      font-size: 6rem;
+    }
+    @media (max-width: 550px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    margin: 0 8rem;
+    margin-top: 8rem;
+    margin-bottom: 18rem;
+  }
+
+  @media (max-width: 550px) {
+    margin: 0 4rem;
+    margin-top: 4rem;
+    margin-bottom: 14rem;
+  }
   &__content {
     display: grid;
     grid-template:
@@ -10,23 +31,54 @@
     column-gap: 10rem;
     row-gap: 6rem;
     margin-top: 15rem;
+    @media (max-width: 1400px) {
+      margin-top: 6rem;
+    }
+    @media (max-width: 1200px) {
+      grid-template:
+        "picture"
+        "hello"
+        "message";
+    }
+    @media (max-width: 450px) {
+      row-gap: 0;
+      margin-top: 3rem;
+    }
 
     & > h3 {
       grid-area: hello;
+      margin-top: 5.5rem;
     }
 
     & > img {
       grid-area: picture;
       display: block;
+      object-fit: cover;
+      object-position: top;
 
       width: 100%;
       border-radius: 2rem;
+
+      @media (max-width: 900px) {
+        height: 60rem;
+      }
+
+      @media (max-width: 450px) {
+        height: 35rem;
+      }
     }
 
     & > p {
       grid-area: message;
-      text-align: justify;
+      text-align: left;
       font-family: $font-display;
+      @media (max-width: 700px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1.6rem;
+      }
 
       & span:not(:first-child) {
         display: inline-block;
