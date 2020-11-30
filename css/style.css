@@ -819,6 +819,11 @@ body {
       color: #fbf9ff;
       line-height: 21.5rem;
       user-select: none; }
+      @media (max-width: 800px) {
+        .about__values__list__item__number {
+          width: 15rem;
+          height: 15rem;
+          line-height: 17rem; } }
     .about__values__list__item__heading {
       margin-top: 5rem; }
       .about__values__list__item__heading > span {

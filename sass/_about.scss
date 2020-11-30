@@ -173,6 +173,12 @@
           color: $color-ghost-white;
           line-height: 21.5rem;
           user-select: none;
+
+          @media (max-width: 800px) {
+            width: 15rem;
+            height: 15rem;
+            line-height: 17rem;
+          }
         }
         &__heading {
           margin-top: 5rem;
