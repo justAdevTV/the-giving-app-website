@@ -604,12 +604,12 @@ body {
     column-gap: 18rem;
     row-gap: 2.5rem;
     margin-top: 15rem; }
-    @media (max-width: 700px) {
-      .your-help__content {
-        margin-top: 8rem; } }
     @media (max-width: 1450px) {
       .your-help__content {
         grid-template-columns: 1fr; } }
+    @media (max-width: 700px) {
+      .your-help__content {
+        margin-top: 8rem; } }
 
 .contact-us {
   padding: 15rem;
@@ -893,6 +893,9 @@ body {
   background-size: cover;
   background-origin: border-box;
   background-position: bottom; }
+  @media (max-width: 850px) {
+    .get-involved__header {
+      height: 50vh; } }
   .get-involved__header__overlay {
     z-index: 1;
     position: absolute;
@@ -910,16 +913,38 @@ body {
       margin-top: auto;
       margin-left: 10rem;
       margin-bottom: 10rem; }
+      @media (max-width: 600px) {
+        .get-involved__header__content__header {
+          margin-left: 5rem; } }
+      @media (max-width: 400px) {
+        .get-involved__header__content__header {
+          margin-left: 3rem; } }
 
 .get-involved__who-are-you {
   padding: 25rem 24rem; }
   .get-involved__who-are-you > h2 {
     text-align: center; }
+  @media (max-width: 1200px) {
+    .get-involved__who-are-you {
+      padding: 10rem 8rem; } }
+  @media (max-width: 800px) {
+    .get-involved__who-are-you {
+      padding: 5rem; } }
+  @media (max-width: 450px) {
+    .get-involved__who-are-you {
+      padding: 3rem; } }
   .get-involved__who-are-you__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16rem;
     margin-top: 15rem; }
+    @media (max-width: 1450px) {
+      .get-involved__who-are-you__cards {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem; } }
+    @media (max-width: 700px) {
+      .get-involved__who-are-you__cards {
+        margin-top: 8rem; } }
 
 .get-involved__your-help > h2 {
   text-align: center; }
