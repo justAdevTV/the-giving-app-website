@@ -956,7 +956,8 @@ body {
       font-size: 4rem; } }
   @media (max-width: 500px) {
     .get-involved__your-help > h2 {
-      font-size: 3rem; } }
+      font-size: 3rem;
+      margin-top: 5rem; } }
   @media (max-width: 400px) {
     .get-involved__your-help > h2 {
       font-size: 2.5rem; } }
@@ -1004,6 +1005,15 @@ body {
   .get-involved__your-help__list__item > p {
     margin-top: 1rem;
     text-align: justify; }
+    @media (max-width: 1420px) {
+      .get-involved__your-help__list__item > p {
+        padding: 0 12rem; } }
+    @media (max-width: 1000px) {
+      .get-involved__your-help__list__item > p {
+        padding: 0 8rem; } }
+    @media (max-width: 600px) {
+      .get-involved__your-help__list__item > p {
+        padding: 0 2rem; } }
   .get-involved__your-help__list__icon {
     display: flex;
     width: 39rem;
@@ -1050,10 +1060,14 @@ body {
     @media (max-width: 1450px) {
       .get-involved__contribute__options {
         grid-template-columns: 1fr;
-        row-gap: 2.5rem; } }
+        row-gap: 2.5rem; }
+        .get-involved__contribute__options img {
+          width: 30%; } }
     @media (max-width: 700px) {
       .get-involved__contribute__options {
-        margin-top: 8rem; } }
+        margin-top: 8rem; }
+        .get-involved__contribute__options img {
+          margin-top: 4rem; } }
 
 .letter {
   margin: 0 15rem;
