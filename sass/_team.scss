@@ -5,6 +5,10 @@
     padding: 5rem 7rem;
   }
 
+  @media (max-width: 1100px) {
+    padding: 5rem 3rem;
+  }
+
   &__header {
     margin-left: 0.5rem;
   }

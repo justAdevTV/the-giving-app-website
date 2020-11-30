@@ -55,7 +55,7 @@ body {
       font-size: 3.2rem; } }
   @media (max-width: 420px) {
     .heading-3 {
-      font-size: 1.7rem; } }
+      font-size: 2.75rem; } }
 
 .heading-4 {
   font-family: "Khula", sans-serif;
@@ -668,6 +668,9 @@ body {
   @media (max-width: 1200px) {
     .team {
       padding: 5rem 7rem; } }
+  @media (max-width: 1100px) {
+    .team {
+      padding: 5rem 3rem; } }
   .team__header {
     margin-left: 0.5rem; }
   .team__tiles {
@@ -965,23 +968,64 @@ body {
   margin: 0 15rem;
   margin-top: 8rem;
   margin-bottom: 28rem; }
+  @media (max-width: 750px) {
+    .letter > h1 {
+      font-size: 6rem; } }
+  @media (max-width: 550px) {
+    .letter > h1 {
+      font-size: 3.5rem; } }
+  @media (max-width: 900px) {
+    .letter {
+      margin: 0 8rem;
+      margin-top: 8rem;
+      margin-bottom: 18rem; } }
+  @media (max-width: 550px) {
+    .letter {
+      margin: 0 4rem;
+      margin-top: 4rem;
+      margin-bottom: 14rem; } }
   .letter__content {
     display: grid;
     grid-template: "hello ." "message picture";
     column-gap: 10rem;
     row-gap: 6rem;
     margin-top: 15rem; }
+    @media (max-width: 1400px) {
+      .letter__content {
+        margin-top: 6rem; } }
+    @media (max-width: 1200px) {
+      .letter__content {
+        grid-template: "picture" "hello" "message"; } }
+    @media (max-width: 450px) {
+      .letter__content {
+        row-gap: 0;
+        margin-top: 3rem; } }
     .letter__content > h3 {
-      grid-area: hello; }
+      grid-area: hello;
+      margin-top: 5.5rem; }
     .letter__content > img {
       grid-area: picture;
       display: block;
+      object-fit: cover;
+      object-position: top;
       width: 100%;
       border-radius: 2rem; }
+      @media (max-width: 900px) {
+        .letter__content > img {
+          height: 60rem; } }
+      @media (max-width: 450px) {
+        .letter__content > img {
+          height: 35rem; } }
     .letter__content > p {
       grid-area: message;
-      text-align: justify;
+      text-align: left;
       font-family: "Poppins", sans-serif; }
+      @media (max-width: 700px) {
+        .letter__content > p {
+          font-size: 2.5rem; } }
+      @media (max-width: 500px) {
+        .letter__content > p {
+          font-size: 1.6rem; } }
       .letter__content > p span:not(:first-child) {
         display: inline-block;
         margin-top: 3rem; }
