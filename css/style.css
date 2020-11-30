@@ -29,6 +29,12 @@ body {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   font-size: 8rem; }
+  @media (max-width: 620px) {
+    .heading-1 {
+      font-size: 6rem; } }
+  @media (max-width: 420px) {
+    .heading-1 {
+      font-size: 2.7rem; } }
 
 .heading-2 {
   font-family: "Poppins", sans-serif;
@@ -660,6 +666,9 @@ body {
   background-size: cover;
   background-origin: border-box;
   background-position: center; }
+  @media (max-width: 850px) {
+    .about__header {
+      height: 50vh; } }
   .about__header__overlay {
     z-index: 1;
     position: absolute;
@@ -677,6 +686,12 @@ body {
       margin-top: auto;
       margin-left: 10rem;
       margin-bottom: 10rem; }
+      @media (max-width: 600px) {
+        .about__header__content__header {
+          margin-left: 5rem; } }
+      @media (max-width: 400px) {
+        .about__header__content__header {
+          margin-left: 3rem; } }
 
 .about__mission {
   padding-top: 25rem;

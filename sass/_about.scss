@@ -7,6 +7,9 @@
     background-size: cover;
     background-origin: border-box;
     background-position: center;
+    @media (max-width: 850px) {
+      height: 50vh;
+    }
 
     &__overlay {
       z-index: 1;
@@ -28,6 +31,12 @@
         margin-top: auto;
         margin-left: 10rem;
         margin-bottom: 10rem;
+        @media (max-width: 600px) {
+          margin-left: 5rem;
+        }
+        @media (max-width: 400px) {
+          margin-left: 3rem;
+        }
       }
     }
   }
