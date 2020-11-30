@@ -20,6 +20,10 @@
       column-gap: 7rem;
       row-gap: 7rem;
     }
+
+    @media (max-width: 1100px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__tile {
@@ -29,6 +33,10 @@
       height: 79rem;
       object-fit: cover;
       border-radius: 4.5rem;
+
+      @media (max-width: 1100px) {
+        height: 45rem;
+      }
     }
 
     &__header {
@@ -37,6 +45,16 @@
 
     &__description {
       font-size: 3.6rem;
+      @media (max-width: 900px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 550px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 550px) {
+        font-size: 1.75rem;
+      }
     }
   }
 }
