@@ -665,6 +665,9 @@ body {
 .team {
   padding: 5rem 12.5rem;
   padding-bottom: 40rem; }
+  @media (max-width: 1200px) {
+    .team {
+      padding: 5rem 7rem; } }
   .team__header {
     margin-left: 0.5rem; }
   .team__tiles {
@@ -673,6 +676,11 @@ body {
     row-gap: 15rem;
     grid-template-columns: 1fr 1fr;
     margin-top: 15rem; }
+    @media (max-width: 1500px) {
+      .team__tiles {
+        margin-top: 7rem;
+        column-gap: 7rem;
+        row-gap: 7rem; } }
   .team__tile__image {
     display: block;
     width: 100%;
