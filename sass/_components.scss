@@ -80,6 +80,7 @@
 .card {
   border-radius: 4.5rem;
   box-shadow: $shadow-1;
+  background-color: $color-white;
   width: -webkit-fill-available;
 
   &__header {
