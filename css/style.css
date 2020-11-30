@@ -729,6 +729,9 @@ body {
     .about__mission {
       padding-top: 15rem;
       padding-bottom: 0; } }
+  @media (max-width: 1150px) {
+    .about__mission {
+      padding-top: 9rem; } }
   @media (max-width: 600px) {
     .about__mission > h2 {
       margin-left: 5rem; } }
@@ -748,6 +751,9 @@ body {
     @media (max-width: 700px) {
       .about__mission__description {
         margin-top: 5rem; } }
+    @media (max-width: 600px) {
+      .about__mission__description {
+        padding: 0 6rem; } }
     .about__mission__description::before {
       content: "";
       bottom: -5.75rem;
