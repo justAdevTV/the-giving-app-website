@@ -557,7 +557,7 @@ body {
       display: grid;
       grid-template-areas: "card preview";
       grid-template-columns: 1.5fr 1fr;
-      grid-column-gap: 15rem;
+      grid-column-gap: 5rem;
       grid-row-gap: 5rem;
       margin-top: 15rem; }
       @media (max-width: 1300px) {
