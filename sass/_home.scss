@@ -265,6 +265,9 @@
         "info"
         "form";
     }
+    @media (max-width: 1050px) {
+      margin-top: 0;
+    }
 
     @media (max-width: 575px) {
       display: block;
