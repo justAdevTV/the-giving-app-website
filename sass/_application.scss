@@ -1,0 +1,42 @@
+.application {
+  padding: 5rem 12.5rem;
+  padding-bottom: 40rem;
+  @media (max-width: 1200px) {
+    padding: 5rem 10rem;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 5rem 3rem;
+  }
+
+  &__paragraph {
+    margin-top: 2.5rem;
+  }
+
+  &__form {
+    & > .label {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    & > .btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 875px) {
+      margin-top: 2rem;
+
+      & > .label {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      & > .btn {
+        margin-top: 8rem;
+      }
+    }
+  }
+}

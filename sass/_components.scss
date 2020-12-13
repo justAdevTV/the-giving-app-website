@@ -150,7 +150,8 @@
     color: $color-input-placeholder;
   }
 
-  &--invalid {
+  &:invalid {
+    border: 2px solid $color-tertiary;
   }
 }
 
@@ -173,5 +174,8 @@
 
   &::placeholder {
     color: $color-input-placeholder;
+  }
+  &:invalid {
+    border: 2px solid $color-tertiary;
   }
 }

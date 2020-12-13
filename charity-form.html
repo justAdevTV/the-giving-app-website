@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Khula & Poppins Import import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="resources/images/favicon.ico"
+    />
+
+    <title>TGA - Charity Application Form</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav nav--no-fix">
+      <!-- Logo -->
+      <a href="" class="nav__logo">
+        <img src="resources/images/logo.png" alt="Company Logo" />
+      </a>
+      <!-- Mobile Trigger -->
+      <a href="#" class="nav__menu-trigger" onclick="showSideNav()"
+        ><img src="resources/icons/hamburger-purple.svg" alt="icon of menu"
+      /></a>
+      <!-- Full links -->
+      <div class="nav__desktop">
+        <!-- Links -->
+        <ul class="nav__links nav__links--inverted">
+          <li class="nav__link"><a href="/">Home</a></li>
+          <li class="nav__link"><a href="/about-us">About Us</a></li>
+          <li class="nav__link"><a href="">Our Team</a></li>
+          <li class="nav__link">
+            <a href="/founder-letter">Founder Letter</a>
+          </li>
+        </ul>
+        <!-- CTA -->
+        <!-- TODO: Make this redirect -->
+        <button
+          class="btn btn--large"
+          type="button"
+          onclick="location.href='/get-involved'"
+        >
+          GET INVOLVED
+        </button>
+      </div>
+      <!-- Mobile -->
+      <div id="side-nav" class="nav__mobile animate__animated animate__fadeIn">
+        <div
+          id="side-nav-content"
+          class="nav__mobile__content animate__animated"
+        >
+          <a href="#" class="nav__mobile__close" onclick="hideSideNav()"
+            ><img src="resources/icons/close-icon.svg" alt="icon for closing"
+          /></a>
+          <img
+            src="resources/images/logo.png"
+            alt="Logo for The-GivingApp"
+            class="nav__mobile__logo"
+          />
+          <ul class="nav__mobile__links">
+            <li class="nav__mobile__link">
+              <a href="/">Home</a>
+            </li>
+            <li class="nav__mobile__link"><a href="/about-us">About Us</a></li>
+            <li class="nav__mobile__link nav__mobile__link--active">
+              <a href="">Our Team</a>
+            </li>
+            <li class="nav__mobile__link">
+              <a href="/founder-letter">Founder Letter</a>
+            </li>
+          </ul>
+          <button
+            class="nav__mobile__button btn"
+            type="button"
+            onclick="location.href='/get-involved'"
+          >
+            GET INVOLVED
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Charity Application -->
+    <section class="application">
+      <h1 class="heading-1">Charity Application Form</h1>
+      <p class="application__paragraph parapgrah">
+        Fill out the form to start the process and join our network of
+        charities!
+      </p>
+      <form action="todo" class="application__form">
+        <!-- Organization Name -->
+        <label for="orgName" class="label">ORGANIZATION NAME*</label>
+        <input
+          id="orgName"
+          name="orgName"
+          placeholder="Name of Your Organization"
+          type="text"
+          class="input"
+          required
+        />
+        <!-- EIN -->
+        <label for="ein" class="label">FEDERAL TAX ID# (EIN)*</label>
+        <input
+          id="ein"
+          name="ein"
+          placeholder="Federal Tax ID#"
+          type="text"
+          class="input"
+          required
+        />
+        <!-- EMAIL -->
+        <label for="email" class="label">EMAIL*</label>
+        <input
+          id="email"
+          name="email"
+          placeholder="contact@email.com"
+          type="text"
+          class="input"
+          required
+        />
+        <!-- Proof 501c3 -->
+        <label for="pdf" class="label">PROOF OF 501(c)(3) STATUS*</label>
+        TODO
+        <!-- Mailing Address -->
+        <label for="mailing" class="label">COMPANY MAILING ADDRESS*</label>
+        <textarea
+          name="mailing"
+          id="mailing"
+          cols="30"
+          rows="10"
+          placeholder="Type message here."
+          class="textarea"
+        ></textarea>
+        <!-- Applicant Name -->
+        <label for="applicantName" class="label">APPLICANT NAME*</label>
+        <input
+          id="applicantName"
+          name="applicantName"
+          placeholder="Your Name"
+          type="text"
+          class="input"
+          required
+        />
+        <!-- Role in Org -->
+        <label for="roleInOrg" class="label">YOUR ROLE IN ORGANIZATION*</label>
+        <input
+          id="roleInOrg"
+          name="roleInOrg"
+          placeholder="Your Role"
+          type="text"
+          class="input"
+          required
+        />
+        <!-- Charity Phone -->
+        <label for="phone" class="label">CONTACT PHONE NUMBER*</label>
+        <input
+          id="phone"
+          name="phone"
+          placeholder="Phone Number"
+          type="text"
+          class="input"
+          required
+        />
+        <!-- Name of Charity Profile Manager -->
+        <label for="managerName" class="label"
+          >NAME OF CHARITY PROFILE MANAGER*</label
+        >
+        <input
+          id="managerName"
+          name="managerName"
+          placeholder="Enter name"
+          type="text"
+          class="input"
+          required
+        />
+        <!-- Email of Charity Profile Manager -->
+        <label for="managerEmail" class="label"
+          >EMAIL OF CHARITY PROFILE MANAGER</label
+        >
+        <input
+          id="managerEmail"
+          name="managerEmail"
+          placeholder="Enter name"
+          type="text"
+          class="input"
+        />
+        <!-- Type/Category -->
+        <label for="categories" class="label">ORGANIZATION TYPE/CATEGORY</label>
+        TODO
+        <!-- Website -->
+        <label for="websiteUrl" class="label"
+          >Your Website (If Applicable)</label
+        >
+        <input
+          id="websiteUrl"
+          name="websiteUrl"
+          placeholder="Your Website"
+          type="text"
+          class="input"
+        />
+        <!-- Mission Statement -->
+        <label for="missionStatement" class="label">MISSION STATEMENT</label>
+        <textarea
+          name="missionStatement"
+          id="missionStatement"
+          cols="30"
+          rows="10"
+          placeholder="Your Mission Statement"
+          class="textarea"
+        ></textarea>
+        <!-- How did they find out -->
+        <label for="referral" class="label">HOW DID YOU HEAR ABOUT US?</label>
+        <textarea
+          name="referral"
+          id="referral"
+          cols="30"
+          rows="10"
+          placeholder="Enter Here"
+          class="textarea"
+        ></textarea>
+        <!-- Extra comments -->
+        <label for="comments" class="label">FEEL FREE TO COMMENT HERE</label>
+        <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="10"
+          placeholder="Enter Comments"
+          class="textarea"
+        ></textarea>
+        <!-- Submit -->
+        <button class="btn" type="submit">SEND FORM</button>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <img
+        src="resources/images/logo_white.png"
+        alt="TGA logo in white"
+        class="footer__img"
+      />
+      <!-- Quick Links -->
+      <ul class="footer__links">
+        <h3 class="footer__header">Quick Links</h3>
+        <li class="footer__link">
+          <a href="">Home</a>
+        </li>
+        <li class="footer__link">
+          <a href="/team">Our Team</a>
+        </li>
+        <li class="footer__link">
+          <a href="/about-us">Our Mission</a>
+        </li>
+        <!-- TODO: Add ToS -->
+        <li class="footer__link">
+          <a href="/get-involved">Get Involved</a>
+        </li>
+        <!-- TODO: Add Link to download -->
+        <li class="footer__link">
+          <a href="#">Annual Report</a>
+        </li>
+      </ul>
+      <!-- Social Links -->
+      <div class="footer__socials">
+        <h3 class="footer__header">Follow Us!</h3>
+        <div class="footer__socials__links">
+          <a
+            href="https://twitter.com/The_GivingApp"
+            target="_blank"
+            class="footer__socials__link"
+          >
+            <img
+              src="resources/icons/iconmonstr-twitter-1.svg"
+              alt="twitter logo"
+              class="footer__socials__link__icon"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/TheGivingAppINC"
+            target="_blank"
+            class="footer__socials__link"
+          >
+            <img
+              src="resources/icons/iconmonstr-facebook-1.svg"
+              alt="facebook logo"
+              class="footer__socials__link__icon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/the.givingapp/"
+            target="_blank"
+            class="footer__socials__link"
+          >
+            <img
+              src="resources/icons/iconmonstr-instagram-11.svg"
+              alt="instagram logo"
+              class="footer__socials__link__icon"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/the-giving-app-inc/"
+            target="_blank"
+            class="footer__socials__link"
+          >
+            <img
+              src="resources/icons/iconmonstr-linkedin-1.svg"
+              alt="linkedin logo"
+              class="footer__socials__link__icon"
+            />
+          </a>
+        </div>
+      </div>
+      <p class="footer__legal">
+        501(c)(3) - EIN: 84-3263491. <span>Copyright 2020.</span>
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

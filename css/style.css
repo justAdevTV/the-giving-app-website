@@ -345,6 +345,8 @@ body {
       border-radius: 2.5rem; } }
   .input::placeholder {
     color: #07070782; }
+  .input:invalid {
+    border: 2px solid #b80300; }
 
 .textarea {
   display: block;
@@ -363,6 +365,8 @@ body {
       border-radius: 2.5rem; } }
   .textarea::placeholder {
     color: #07070782; }
+  .textarea:invalid {
+    border: 2px solid #b80300; }
 
 .footer {
   display: grid;
@@ -667,6 +671,34 @@ body {
             .contact-us__content__form__inline-inputs > input:first-child {
               margin-right: 0;
               margin-bottom: 1rem; } }
+
+.application {
+  padding: 5rem 12.5rem;
+  padding-bottom: 40rem; }
+  @media (max-width: 1200px) {
+    .application {
+      padding: 5rem 10rem; } }
+  @media (max-width: 1100px) {
+    .application {
+      padding: 5rem 3rem; } }
+  .application__paragraph {
+    margin-top: 2.5rem; }
+  .application__form > .label {
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
+  .application__form > .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem; }
+  @media (min-width: 875px) {
+    .application__form {
+      margin-top: 2rem; }
+      .application__form > .label {
+        margin-top: 2rem;
+        margin-bottom: 1rem; }
+      .application__form > .btn {
+        margin-top: 8rem; } }
 
 .team {
   padding: 5rem 12.5rem;
