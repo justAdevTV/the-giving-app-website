@@ -333,10 +333,11 @@ body {
 .input {
   display: block;
   width: -webkit-fill-available;
-  border-radius: 4.5rem;
-  border: 1px solid #070707;
+  border-radius: 2rem;
+  border: none;
   padding: 2.8rem 4.5rem;
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  box-shadow: 0px 3px 6px #0000003b; }
   @media (max-width: 500px) {
     .input {
       font-size: 1.6rem;
@@ -347,8 +348,9 @@ body {
 
 .textarea {
   display: block;
-  border-radius: 4.5rem;
-  border: 1px solid #070707;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0px 3px 6px #0000003b;
   padding: 2.8rem 4.5rem;
   font-size: 2.4rem;
   font-family: "Khula", sans-serif;

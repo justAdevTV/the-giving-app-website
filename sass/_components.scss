@@ -134,10 +134,11 @@
 .input {
   display: block;
   width: -webkit-fill-available;
-  border-radius: 4.5rem;
-  border: 1px solid $color-black;
+  border-radius: 2rem;
+  border: none;
   padding: 2.8rem 4.5rem;
   font-size: 2.4rem;
+  box-shadow: $shadow-2;
 
   @media (max-width: 500px) {
     font-size: 1.6rem;
@@ -155,8 +156,9 @@
 
 .textarea {
   display: block;
-  border-radius: 4.5rem;
-  border: 1px solid $color-black;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: $shadow-2;
   padding: 2.8rem 4.5rem;
   font-size: 2.4rem;
   font-family: $font-primary;
