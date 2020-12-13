@@ -131,15 +131,23 @@
         />
         <!-- Proof 501c3 -->
         <label for="pdf" class="label">PROOF OF 501(c)(3) STATUS*</label>
-        TODO
+        <input id="pdf" type="file" hidden />
+        <button
+          class="btn btn--inverted"
+          id="downloadButton"
+          type="button"
+          value="pdf"
+        >
+          Upload File
+        </button>
         <!-- Mailing Address -->
         <label for="mailing" class="label">COMPANY MAILING ADDRESS*</label>
         <textarea
           name="mailing"
           id="mailing"
           cols="30"
-          rows="10"
-          placeholder="Type message here."
+          rows="4"
+          placeholder="123 Apple St."
           class="textarea"
         ></textarea>
         <!-- Applicant Name -->
@@ -215,7 +223,7 @@
           name="missionStatement"
           id="missionStatement"
           cols="30"
-          rows="10"
+          rows="4"
           placeholder="Your Mission Statement"
           class="textarea"
         ></textarea>
@@ -225,7 +233,7 @@
           name="referral"
           id="referral"
           cols="30"
-          rows="10"
+          rows="4"
           placeholder="Enter Here"
           class="textarea"
         ></textarea>
@@ -235,12 +243,12 @@
           name="comments"
           id="comments"
           cols="30"
-          rows="10"
+          rows="4"
           placeholder="Enter Comments"
           class="textarea"
         ></textarea>
         <!-- Submit -->
-        <button class="btn" type="submit">SEND FORM</button>
+        <button class="btn submit" type="submit">SEND FORM</button>
       </form>
     </section>
     <!-- Footer -->

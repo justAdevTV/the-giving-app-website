@@ -2,24 +2,36 @@
   padding: 5rem 12.5rem;
   padding-bottom: 40rem;
   @media (max-width: 1200px) {
-    padding: 5rem 10rem;
+    padding: 5rem 20rem;
   }
 
   @media (max-width: 1100px) {
-    padding: 5rem 3rem;
+    padding: 5rem 15rem;
+  }
+
+  @media (max-width: 700px) {
+    padding: 5rem 10rem;
   }
 
   &__paragraph {
     margin-top: 2.5rem;
+    @media (max-width: 700px) {
+      font-size: 2rem;
+    }
   }
 
   &__form {
     & > .label {
       margin-top: 2rem;
       margin-bottom: 1rem;
+
+      @media (max-width: 1100px) {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+      }
     }
 
-    & > .btn {
+    & > .submit {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -34,7 +46,7 @@
         margin-bottom: 1rem;
       }
 
-      & > .btn {
+      & > .submit {
         margin-top: 8rem;
       }
     }
