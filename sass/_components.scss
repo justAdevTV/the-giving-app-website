@@ -33,6 +33,16 @@
     transform: translateY(1px);
   }
 
+  &--disabled {
+    background-color: $color-gray-light-3;
+    cursor: default;
+
+    &:hover {
+      background-color: $color-gray-light-3;
+      transform: none;
+    }
+  }
+
   &--large {
     padding: 2.5rem 3rem;
     border-radius: 2rem;

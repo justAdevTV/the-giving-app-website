@@ -262,6 +262,12 @@ body {
     outline: none; }
   .btn:active {
     transform: translateY(1px); }
+  .btn--disabled {
+    background-color: #707070;
+    cursor: default; }
+    .btn--disabled:hover {
+      background-color: #707070;
+      transform: none; }
   .btn--large {
     padding: 2.5rem 3rem;
     border-radius: 2rem; }
