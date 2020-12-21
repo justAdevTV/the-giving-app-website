@@ -151,7 +151,8 @@
   }
 
   &:invalid {
-    border: 2px solid $color-tertiary;
+    // TODO: Fix this
+    // border: 2px solid $color-tertiary;
   }
 }
 

@@ -345,8 +345,6 @@ body {
       border-radius: 2.5rem; } }
   .input::placeholder {
     color: #07070782; }
-  .input:invalid {
-    border: 2px solid #b80300; }
 
 .textarea {
   display: block;
