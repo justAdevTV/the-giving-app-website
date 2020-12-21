@@ -1,0 +1,62 @@
+.application {
+  padding: 5rem 3rem;
+  padding-bottom: 10rem;
+
+  @media (min-width: 500px) {
+    padding: 5rem 5rem;
+  }
+
+  @media (min-width: 700px) {
+    padding: 5rem 10rem;
+  }
+  @media (min-width: 1100px) {
+    padding: 5rem 15rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 5rem 20rem;
+  }
+
+  &__paragraph {
+    margin-top: 2.5rem;
+    @media (max-width: 700px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__form {
+    & > .label {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+
+      @media (max-width: 1100px) {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    & > .checkbox-container {
+      margin-left: 2rem;
+    }
+
+    & > .submit {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 875px) {
+      margin-top: 2rem;
+
+      & > .label {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      & > .submit {
+        margin-top: 8rem;
+      }
+    }
+  }
+}

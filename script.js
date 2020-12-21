@@ -25,6 +25,13 @@ function hideSideNav() {
   enableScroll();
 }
 
+// Upload file
+document.getElementById("downloadButton").addEventListener("click", openDialog);
+
+function openDialog() {
+  document.getElementById("pdf").click();
+}
+
 // NO SCROLL CODE HERE
 // Code from: https://stackoverflow.com/a/4770179/11082274
 
