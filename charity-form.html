@@ -98,11 +98,9 @@
         charities!
       </p>
       <form
-        action="todo"
         class="application__form"
         action="https://formspree.io/f/xyybbznr"
         method="POST"
-        enctype="multipart/form-data"
       >
         <!-- Organization Name -->
         <label for="orgName" class="label">ORGANIZATION NAME*</label>
@@ -130,26 +128,18 @@
           id="email"
           name="email"
           placeholder="contact@email.com"
-          type="text"
+          type="email"
           class="input"
           required
         />
-        <!-- Proof 501c3 -->
-        <label for="pdf" class="label">PROOF OF 501(c)(3) STATUS*</label>
-        <input id="pdf" type="file" hidden />
-        <button
-          class="btn btn--inverted"
-          id="downloadButton"
-          type="button"
-          value="pdf"
-        >
-          Upload File
-        </button>
+
         <!-- Mailing Address -->
-        <label for="mailing" class="label">COMPANY MAILING ADDRESS*</label>
+        <label for="mailingAddress" class="label"
+          >COMPANY MAILING ADDRESS*</label
+        >
         <textarea
-          name="mailing"
-          id="mailing"
+          name="mailingAddress"
+          id="mailingAddress"
           cols="30"
           rows="4"
           placeholder="123 Apple St."
