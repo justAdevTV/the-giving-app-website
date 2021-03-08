@@ -212,6 +212,64 @@
       }
     }
   }
+
+  &__video {
+    margin-top: 30rem;
+    margin-bottom: 15rem;
+
+    @media (max-width: 700px) {
+      margin-top: 15rem;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-areas: "card preview";
+      grid-template-columns: 1.5fr 1fr;
+      grid-column-gap: 5rem;
+      grid-row-gap: 5rem;
+
+      margin-top: 15rem;
+
+      @media (max-width: 1300px) {
+        margin-top: 7rem;
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "preview"
+          "card";
+      }
+
+      &__card {
+        grid-area: card;
+        margin: auto 0;
+        padding: 7rem 10rem;
+        height: min-content;
+        & > p {
+          margin-top: 4rem;
+        }
+
+        & button {
+          margin-top: 5rem;
+        }
+
+        @media (max-width: 800px) {
+          padding: 5rem 3.5rem;
+          & > p {
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+    &__video {
+      height: 40rem;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      & > center {
+        margin-top: 4rem;
+      }
+    }
+  }
 }
 
 .your-help {
